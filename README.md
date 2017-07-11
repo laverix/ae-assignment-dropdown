@@ -2,7 +2,7 @@
 
 Interview Exercise: Dropdown Component
 
-![](src/assets/img/logo.svg)
+![](src/assets/img/logo.png)
 
 ## Usage
 
