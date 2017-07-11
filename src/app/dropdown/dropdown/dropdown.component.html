@@ -1,0 +1,19 @@
+<button class="btn-clear" type="reset" *ngIf="showClearButton == true" (click)="form.reset()">
+  Clear
+</button>
+<div class="container">
+  <form class="select" tabindex="1" novalidate #form="ngForm">
+    <ng-container *ngFor="let item of data">
+      <input name="ae-dropdown"
+             type="radio"
+             [id]="item.id"
+             [value]="item.title"
+             [ngModel]="chosenItem">
+      <label [for]="item.id" class="option">{{ item.title }}</label>
+    </ng-container>
+    <input name="ae-dropdown" type="radio" id="no-data" value="" checked>
+    <label for="no-data" class="option">
+      It's time to choose
+    </label>
+  </form>
+</div>
