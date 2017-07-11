@@ -3,6 +3,7 @@ import {Http} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
+import {Movies} from './movies';
 
 @Injectable()
 export class MoviedbService {
@@ -11,7 +12,7 @@ export class MoviedbService {
   constructor(private http: Http) {
   }
 
-  getTopMovies(): Observable<['']> {
+  getTopMovies(): Observable<Movies> {
     return this.http.get(`https://api.themoviedb.org/3/movie/popular?api_key=${this.apiKey}`)
       .map((response) => response.json())
       .catch((error: any) => Observable.throw(error.json().error || 'Server error'));

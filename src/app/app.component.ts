@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {MoviedbService} from './moviedb.service';
+import {Movies} from './movies';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +8,7 @@ import {MoviedbService} from './moviedb.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  public movies: Array<String>;
+  public movies: Movies;
   public chosenMovie;
 
   constructor(private moviedbService: MoviedbService) {
