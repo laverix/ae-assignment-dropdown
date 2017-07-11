@@ -1,28 +1,47 @@
-# AeAssignmentDropdown
+# Ae Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
+Interview Exercise: Dropdown Component
 
-## Development server
+![](src/assets/img/logo.svg)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Usage
 
-## Code scaffolding
+Import `DropdownModule` in the root module
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
-## Build
+```javascript
+import { DropdownModule } from './dropdown/dropdown.module';
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+@NgModule({
+  imports: [
+    // ...
+    DropdownModule
+  ]
+})
+```
 
-## Running unit tests
+In your template
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```html
+<ae-dropdown [data]="yourdata", (formUpdated)="yourEventHandler($event)"></ae-dropdown>
+```
 
-## Running end-to-end tests
+## Contributing
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request
 
-## Further help
+## History
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+TODO: Write history
+
+## Credits
+
+TODO: Write credits
+
+## License
+
+MIT © [Valery Lyatsevich](http://lyatsevich.com)
