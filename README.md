@@ -26,6 +26,21 @@ In your template
 <ae-dropdown [data]="yourdata", (formUpdated)="yourEventHandler($event)"></ae-dropdown>
 ```
 
+## Exercise
+
+Implement the Dropdown Component with Angular2/4. Use this dropdown as a reference for design and functionality.
+
+Dropdown Requirements:
+
+Open and Close States
+Options in Dropdown should be selectable and update the title of Dropdown
+Only if a selection is made, should you be able to clear your selection via Clear button
+Dropdown should be scrollable
+Dropdown Items should have hover state
+Clear button should be displayed when a selection has been made
+
+Link to MovieDB API Docs: https://developers.themoviedb.org/3/movies
+
 ## Contributing
 
 1. Fork it!
